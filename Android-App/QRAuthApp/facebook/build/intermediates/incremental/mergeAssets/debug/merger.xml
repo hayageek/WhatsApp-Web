@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/Users/ravishanker/git/facebook-android-sdk/facebook/assets"/></dataSet><dataSet config="debug"><source path="/Users/ravishanker/git/facebook-android-sdk/facebook/build-types/debug/assets"/></dataSet></merger>

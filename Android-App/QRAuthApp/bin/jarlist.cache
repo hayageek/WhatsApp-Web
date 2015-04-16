@@ -1,0 +1,15 @@
+# cache for current jar dependency. DO NOT EDIT.
+# format is <lastModified> <length> <SHA-1> <path>
+# Encoding is UTF-8
+1428480433000 46476 91c20388c9a45f62b5ed8fe0502bb76ff6251fc7 /Users/ravishanker/Desktop/QRAuth/Android/QRAuthApp/libs/bolts-android-1.1.2.jar
+1428480433000 46476 91c20388c9a45f62b5ed8fe0502bb76ff6251fc7 /Users/ravishanker/Desktop/QRAuth/Android/QRAuthApp/facebook/libs/bolts-android-1.1.2.jar
+1428657988000 190375 d424c18a45bd6c9043d1023af569328a0184c9e3 /Users/ravishanker/Desktop/QRAuth/Android/QRAuthApp/libs/captureactivity.jar
+1428657988000 190375 d424c18a45bd6c9043d1023af569328a0184c9e3 /Users/ravishanker/Desktop/QRAuth/Android/QRAuthApp/facebook/libs/captureactivity.jar
+1428649652000 11577 ba313304b479adbaca44ca2d090408910458d997 /Users/ravishanker/Desktop/QRAuth/Android/QRAuthApp/facebook/libs/android-core-3.2.1-SNAPSHOT.jar
+1428649652000 11577 ba313304b479adbaca44ca2d090408910458d997 /Users/ravishanker/Desktop/QRAuth/Android/QRAuthApp/libs/android-core-3.2.1-SNAPSHOT.jar
+1428649653000 11296 7c8c1262a212882e057e4de4beaf2c4d05e9f70c /Users/ravishanker/Desktop/QRAuth/Android/QRAuthApp/facebook/libs/android-integration-3.2.1-SNAPSHOT.jar
+1428649653000 11296 7c8c1262a212882e057e4de4beaf2c4d05e9f70c /Users/ravishanker/Desktop/QRAuth/Android/QRAuthApp/libs/android-integration-3.2.1-SNAPSHOT.jar
+1428649491000 545304 d567496025ebfae54a980cd34c4d5e7cd767865b /Users/ravishanker/Desktop/QRAuth/Android/QRAuthApp/libs/core-3.2.1-SNAPSHOT.jar
+1428649491000 545304 d567496025ebfae54a980cd34c4d5e7cd767865b /Users/ravishanker/Desktop/QRAuth/Android/QRAuthApp/facebook/libs/core-3.2.1-SNAPSHOT.jar
+1428480433000 758727 efec67655f6db90757faa37201efcee2a9ec3507 /Users/ravishanker/Desktop/QRAuth/Android/QRAuthApp/libs/android-support-v4.jar
+1428480433000 758727 efec67655f6db90757faa37201efcee2a9ec3507 /Users/ravishanker/Desktop/QRAuth/Android/QRAuthApp/facebook/libs/android-support-v4.jar

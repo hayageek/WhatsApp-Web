@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/Users/ravishanker/git/facebook-android-sdk/facebook/junitTests/build/intermediates/exploded-aar/facebook-android-sdk/facebook/unspecified/res/values-ar/values.xml -->
+    <eat-comment/>
+    <string name="messenger_send_button_text">إرسال</string>
+</resources>

@@ -1,0 +1,844 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Lint Report</title>
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto" />
+<link rel="stylesheet" type="text/css" href="lint-results_files/hololike.css" />
+<script language="javascript" type="text/javascript"> 
+<!--
+function reveal(id) {
+if (document.getElementById) {
+document.getElementById(id).style.display = 'block';
+document.getElementById(id+'Link').style.display = 'none';
+}
+}
+//--> 
+</script>
+</head>
+<body>
+<h1>Lint Report</h1>
+<div class="titleSeparator"></div>
+Check performed at Thu Apr 09 12:40:56 SGT 2015.<br/>
+0 errors and 36 warnings found:<br/><br/>
+<table class="overview">
+<tr><td></td><td class="categoryColumn"><a href="#Correctness">Correctness</a>
+</td></tr>
+<tr>
+<td class="countColumn">4</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#Assert">Assert: Assertions</a>
+</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#GradleDeprecated">GradleDeprecated: Deprecated Gradle Construct</a>
+</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#LocaleFolder">LocaleFolder: Wrong locale name</a>
+</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#ManifestOrder">ManifestOrder: Incorrect order of elements in manifest</a>
+</td></tr>
+<tr><td></td><td class="categoryColumn"><a href="#Security">Security</a>
+</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#UsingHttp">UsingHttp: Using HTTP instead of HTTPS</a>
+</td></tr>
+<tr><td></td><td class="categoryColumn"><a href="#Performance">Performance</a>
+</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#HandlerLeak">HandlerLeak: Handler reference leaks</a>
+</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#MergeRootFrame">MergeRootFrame: FrameLayout can be replaced with <code>&lt;merge></code> tag</a>
+</td></tr>
+<tr>
+<td class="countColumn">2</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#UseSparseArrays">UseSparseArrays: HashMap can be replaced with SparseArray</a>
+</td></tr>
+<tr>
+<td class="countColumn">14</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#UnusedResources">UnusedResources: Unused resources</a>
+</td></tr>
+<tr><td></td><td class="categoryColumn"><a href="#Usability:Typography">Usability:Typography</a>
+</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#TypographyEllipsis">TypographyEllipsis: Ellipsis string can be replaced with ellipsis character</a>
+</td></tr>
+<tr><td></td><td class="categoryColumn"><a href="#Usability:Icons">Usability:Icons</a>
+</td></tr>
+<tr>
+<td class="countColumn">3</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#IconDensities">IconDensities: Icon densities validation</a>
+</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#IconMissingDensityFolder">IconMissingDensityFolder: Missing density folder</a>
+</td></tr>
+<tr><td></td><td class="categoryColumn"><a href="#Usability">Usability</a>
+</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#ViewConstructor">ViewConstructor: Missing View constructors for XML inflation</a>
+</td></tr>
+<tr><td></td><td class="categoryColumn"><a href="#Accessibility">Accessibility</a>
+</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#ClickableViewAccessibility">ClickableViewAccessibility: Accessibility in Custom Views</a>
+</td></tr>
+<tr>
+<td class="countColumn">3</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#ContentDescription">ContentDescription: Image without <code>contentDescription</code></a>
+</td></tr>
+<tr><td></td><td class="categoryColumn"><a href="#MissingIssues">Disabled Checks (11)</a>
+</td></tr></table>
+<br/>
+<a name="Correctness"></a>
+<div class="category"><a href="#" title="Return to top">Correctness</a><div class="categorySeparator"></div>
+</div>
+<a name="Assert"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">Assert: Assertions</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../src/com/facebook/internal/WorkQueue.java">../../src/com/facebook/internal/WorkQueue.java</a>:85</span>: <span class="message">Assertions are unreliable. Use <code>BuildConfig.DEBUG</code> conditional checks instead.</span><br /><pre class="errorlines">
+<span class="lineno">  82</span>                 } while (walk != runningJobs);
+<span class="lineno">  83</span>             }
+<span class="lineno">  84</span> 
+<span class="lineno">  85</span>             <span class="errorspan">assert runningCount == count;</span>
+<span class="lineno">  86</span>         }
+<span class="lineno">  87</span>     }
+</pre>
+<span class="location"><a href="../../src/com/facebook/internal/WorkQueue.java">../../src/com/facebook/internal/WorkQueue.java</a>:219</span>: <span class="message">Assertions are unreliable. Use <code>BuildConfig.DEBUG</code> conditional checks instead.</span><br /><pre class="errorlines">
+<span class="lineno"> 216</span>         }
+<span class="lineno"> 217</span> 
+<span class="lineno"> 218</span>         void verify(boolean shouldBeRunning) {
+<span class="lineno"> 219</span>             <span class="errorspan">assert prev.next == this;</span>
+<span class="lineno"> 220</span>             assert next.prev == this;
+<span class="lineno"> 221</span>             assert isRunning() == shouldBeRunning;
+</pre>
+<span class="location"><a href="../../src/com/facebook/internal/WorkQueue.java">../../src/com/facebook/internal/WorkQueue.java</a>:220</span>: <span class="message">Assertions are unreliable. Use <code>BuildConfig.DEBUG</code> conditional checks instead.</span><br /><pre class="errorlines">
+<span class="lineno"> 217</span> 
+<span class="lineno"> 218</span>         void verify(boolean shouldBeRunning) {
+<span class="lineno"> 219</span>             assert prev.next == this;
+<span class="lineno"> 220</span>             <span class="errorspan">assert next.prev == this;</span>
+<span class="lineno"> 221</span>             assert isRunning() == shouldBeRunning;
+<span class="lineno"> 222</span>         }
+</pre>
+<span class="location"><a href="../../src/com/facebook/internal/WorkQueue.java">../../src/com/facebook/internal/WorkQueue.java</a>:221</span>: <span class="message">Assertions are unreliable. Use <code>BuildConfig.DEBUG</code> conditional checks instead.</span><br /><pre class="errorlines">
+<span class="lineno"> 218</span>         void verify(boolean shouldBeRunning) {
+<span class="lineno"> 219</span>             assert prev.next == this;
+<span class="lineno"> 220</span>             assert next.prev == this;
+<span class="lineno"> 221</span>             <span class="errorspan">assert isRunning() == shouldBeRunning;</span>
+<span class="lineno"> 222</span>         }
+<span class="lineno"> 223</span>     }
+</pre>
+</div>
+<div class="metadata">Priority: 6 / 10<br/>
+Category: Correctness</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Assertions.</div>
+<div class="explanation">
+Assertions are not checked at runtime. There are ways to request that they be used by Dalvik (<code>adb shell setprop debug.assert 1</code>), but the property is ignored in many places and can not be relied upon. Instead, perform conditional checking inside <code>if (BuildConfig.DEBUG) { }</code> blocks. That constant is a static final boolean which is true in debug builds and false in release builds, and the Java compiler completely removes all code inside the if-body from the app.<br/>
+<br/>
+For example, you can replace <code>assert speed > 0</code> with <code>if (BuildConfig.DEBUG &amp;&amp; !(speed > 0)) { throw new AssertionError() }</code>.<br/>
+<br/>
+(Note: This lint check does not flag assertions purely asserting nullness or non-nullness; these are typically more intended for tools usage than runtime checks.)
+</div>
+<br/><div class="moreinfo">More info: <a href="https://code.google.com/p/android/issues/detail?id=65183">https://code.google.com/p/android/issues/detail?id=65183</a>
+</div><br/>To suppress this error, use the issue id "Assert" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="GradleDeprecated"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">GradleDeprecated: Deprecated Gradle Construct</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../build.gradle">../../build.gradle</a>:9</span>: <span class="message">'android-library' is deprecated; use 'com.android.library' instead</span><br /><pre class="errorlines">
+<span class="lineno">   6</span>         classpath 'com.android.tools.build:gradle:1.0.0'
+<span class="lineno">   7</span>     }
+<span class="lineno">   8</span> }
+<span class="lineno">   9</span> <span class="errorspan">apply plugin: 'android-library'</span>
+<span class="lineno">  10</span> 
+<span class="lineno">  11</span> dependencies {
+</pre>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Android Studio/IntelliJ&nbsp;<img alt="Fix" border="0" align="top" src="lint-results_files/lint-run.png" />
+<br>
+Priority: 6 / 10<br/>
+Category: Correctness</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Deprecated Gradle Construct.</div>
+<div class="explanation">
+This detector looks for deprecated Gradle constructs which currently work but will likely stop working in a future update.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "GradleDeprecated" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="LocaleFolder"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">LocaleFolder: Wrong locale name</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../res/values-he">../../res/values-he</a></span>: <span class="message">The locale folder "<code>he</code>" should be called "<code>iw</code>" instead; see the <code>java.util.Locale</code> documentation</span><br />
+</div>
+<div class="metadata">Priority: 6 / 10<br/>
+Category: Correctness</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Wrong locale name.</div>
+<div class="explanation">
+From the <code>java.util.Locale</code> documentation:<br/>
+"Note that Java uses several deprecated two-letter codes. The Hebrew ("he") language code is rewritten as "iw", Indonesian ("id") as "in", and Yiddish ("yi") as "ji". This rewriting happens even if you construct your own Locale object, not just for instances returned by the various lookup methods.<br/>
+<br/>
+Because of this, if you add your localized resources in for example <code>values-he</code> they will not be used, since the system will look for <code>values-iw</code> instead.<br/>
+<br/>
+To work around this, place your resources in a <code>values</code> folder using the deprecated language code instead.
+</div>
+<br/><div class="moreinfo">More info: <a href="http://developer.android.com/reference/java/util/Locale.html">http://developer.android.com/reference/java/util/Locale.html</a>
+</div><br/>To suppress this error, use the issue id "LocaleFolder" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="ManifestOrder"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">ManifestOrder: Incorrect order of elements in manifest</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../AndroidManifest.xml">../../AndroidManifest.xml</a>:25</span>: <span class="message"><code>&lt;uses-sdk></code> tag appears after <code>&lt;application></code> tag</span><br /><pre class="errorlines">
+<span class="lineno">  22</span> &lt;manifest xmlns:android="http://schemas.android.com/apk/res/android"
+<span class="lineno">  23</span>       package="com.facebook">
+<span class="lineno">  24</span>     &lt;application/>
+<span class="lineno">  25</span>     <span class="errorspan">&lt;uses-sdk android:minSdkVersion="9" /></span>
+<span class="lineno">  26</span> &lt;/manifest>
+<span class="lineno">  27</span> 
+</pre>
+</div>
+<div class="metadata">Priority: 5 / 10<br/>
+Category: Correctness</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Incorrect order of elements in manifest.</div>
+<div class="explanation">
+The &lt;application> tag should appear after the elements which declare which version you need, which features you need, which libraries you need, and so on. In the past there have been subtle bugs (such as themes not getting applied correctly) when the <code>&lt;application></code> tag appears before some of these other elements, so it's best to order your manifest in the logical dependency order.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "ManifestOrder" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+
+<a name="Security"></a>
+<div class="category"><a href="#" title="Return to top">Security</a><div class="categorySeparator"></div>
+</div>
+<a name="UsingHttp"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">UsingHttp: Using HTTP instead of HTTPS</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../gradle/wrapper/gradle-wrapper.properties">../../gradle/wrapper/gradle-wrapper.properties</a>:6</span>: <span class="message">Replace HTTP with HTTPS for better security; use https\://services.gradle.org/distributions/gradle-1.12-all.zip</span><br /><pre class="errorlines">
+<span class="lineno">   3</span> distributionPath=wrapper/dists
+<span class="lineno">   4</span> zipStoreBase=GRADLE_USER_HOME
+<span class="lineno">   5</span> zipStorePath=wrapper/dists
+<span class="lineno">   6</span> distributionUrl=<span class="errorspan">http\://services.gradle.org/distributions/gradle-1.12-all.zip</span>
+<span class="lineno">   7</span> 
+
+</pre>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Android Studio/IntelliJ&nbsp;<img alt="Fix" border="0" align="top" src="lint-results_files/lint-run.png" />
+<br>
+Priority: 6 / 10<br/>
+Category: Security</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Using HTTP instead of HTTPS.</div>
+<div class="explanation">
+The Gradle Wrapper is available both via HTTP and HTTPS. HTTPS is more secure since it protects against man-in-the-middle attacks etc. Older projects created in Android Studio used HTTP but we now default to HTTPS and recommend upgrading existing projects.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "UsingHttp" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+
+<a name="Performance"></a>
+<div class="category"><a href="#" title="Return to top">Performance</a><div class="categorySeparator"></div>
+</div>
+<a name="HandlerLeak"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">HandlerLeak: Handler reference leaks</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../src/com/facebook/internal/PlatformServiceClient.java">../../src/com/facebook/internal/PlatformServiceClient.java</a>:59</span>: <span class="message">This Handler class should be static or leaks might occur (com.facebook.internal.PlatformServiceClient.1)</span><br /><pre class="errorlines">
+<span class="lineno">  56</span>         this.applicationId = applicationId;
+<span class="lineno">  57</span>         this.protocolVersion = protocolVersion;
+<span class="lineno">  58</span> 
+<span class="lineno">  59</span>         handler = new <span class="errorspan">Handler() {</span>
+<span class="lineno">  60</span>             @Override
+<span class="lineno">  61</span>             public void handleMessage(Message message) {
+</pre>
+</div>
+<div class="metadata">Priority: 4 / 10<br/>
+Category: Performance</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Handler reference leaks.</div>
+<div class="explanation">
+Since this Handler is declared as an inner class, it may prevent the outer class from being garbage collected. If the Handler is using a Looper or MessageQueue for a thread other than the main thread, then there is no issue. If the Handler is using the Looper or MessageQueue of the main thread, you need to fix your Handler declaration, as follows: Declare the Handler as a static class; In the outer class, instantiate a WeakReference to the outer class and pass this object to your Handler when you instantiate the Handler; Make all references to members of the outer class using the WeakReference object.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "HandlerLeak" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="MergeRootFrame"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">MergeRootFrame: FrameLayout can be replaced with <code>&lt;merge></code> tag</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../res/layout/com_facebook_activity_layout.xml">../../res/layout/com_facebook_activity_layout.xml</a>:23</span>: <span class="message">This <code>&lt;FrameLayout></code> can be replaced with a <code>&lt;merge></code> tag</span><br /><pre class="errorlines">
+<span class="lineno">  20</span> -->
+<span class="lineno">  21</span> 
+<span class="lineno">  22</span> 
+<span class="lineno">  23</span> <span class="errorspan">&lt;FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"</span>
+<span class="lineno">  24</span>              android:id="@+id/com_facebook_fragment_container"
+<span class="lineno">  25</span>              android:layout_width="match_parent"
+</pre>
+</div>
+<div class="metadata">Priority: 4 / 10<br/>
+Category: Performance</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: FrameLayout can be replaced with <code>&lt;merge></code> tag.</div>
+<div class="explanation">
+If a <code>&lt;FrameLayout></code> is the root of a layout and does not provide background or padding etc, it can often be replaced with a <code>&lt;merge></code> tag which is slightly more efficient. Note that this depends on context, so make sure you understand how the <code>&lt;merge></code> tag works before proceeding.
+</div>
+<br/><div class="moreinfo">More info: <a href="http://android-developers.blogspot.com/2009/03/android-layout-tricks-3-optimize-by.html">http://android-developers.blogspot.com/2009/03/android-layout-tricks-3-optimize-by.html</a>
+</div><br/>To suppress this error, use the issue id "MergeRootFrame" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="UseSparseArrays"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">UseSparseArrays: HashMap can be replaced with SparseArray</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../src/com/facebook/internal/FacebookRequestErrorClassification.java">../../src/com/facebook/internal/FacebookRequestErrorClassification.java</a>:141</span>: <span class="message">Use <code>new SparseArray&lt;Set&lt;Integer>>(...)</code> instead for better performance</span><br /><pre class="errorlines">
+<span class="lineno"> 138</span>     }
+<span class="lineno"> 139</span> 
+<span class="lineno"> 140</span>     private static FacebookRequestErrorClassification getDefaultErrorClassificationImpl() {
+<span class="lineno"> 141</span>         Map&lt;Integer, Set&lt;Integer>> transientErrors = <span class="errorspan">new HashMap&lt;Integer, Set&lt;Integer>>() {{</span>
+<span class="lineno"> 142</span>             put(EC_SERVICE_UNAVAILABLE, null);
+<span class="lineno"> 143</span>             put(EC_APP_TOO_MANY_CALLS, null);
+</pre>
+<span class="location"><a href="../../src/com/facebook/internal/FacebookRequestErrorClassification.java">../../src/com/facebook/internal/FacebookRequestErrorClassification.java</a>:149</span>: <span class="message">Use <code>new SparseArray&lt;Set&lt;Integer>>(...)</code> instead for better performance</span><br /><pre class="errorlines">
+<span class="lineno"> 146</span>             put(EC_TOO_MANY_USER_ACTION_CALLS, null);
+<span class="lineno"> 147</span>         }};
+<span class="lineno"> 148</span> 
+<span class="lineno"> 149</span>         Map&lt;Integer, Set&lt;Integer>> loginRecoverableErrors = <span class="errorspan">new HashMap&lt;Integer, Set&lt;Integer>>() {{</span>
+<span class="lineno"> 150</span>             put(EC_INVALID_SESSION,null);
+<span class="lineno"> 151</span>             put(EC_INVALID_TOKEN,null);
+</pre>
+</div>
+<div class="metadata">Priority: 4 / 10<br/>
+Category: Performance</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: HashMap can be replaced with SparseArray.</div>
+<div class="explanation">
+For maps where the keys are of type integer, it's typically more efficient to use the Android <code>SparseArray</code> API. This check identifies scenarios where you might want to consider using <code>SparseArray</code> instead of <code>HashMap</code> for better performance.<br/>
+<br/>
+This is <b>particularly</b> useful when the value types are primitives like ints, where you can use <code>SparseIntArray</code> and avoid auto-boxing the values from <code>int</code> to <code>Integer</code>.<br/>
+<br/>
+If you need to construct a <code>HashMap</code> because you need to call an API outside of your control which requires a <code>Map</code>, you can suppress this warning using for example the <code>@SuppressLint</code> annotation.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "UseSparseArrays" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="UnusedResources"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">UnusedResources: Unused resources</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../res/layout/messenger_button_send_blue_large.xml">../../res/layout/messenger_button_send_blue_large.xml</a></span>: <span class="message">The resource <code>R.layout.messenger_button_send_blue_large</code> appears to be unused</span><br />
+<span class="location"><a href="../../res/layout/messenger_button_send_blue_round.xml">../../res/layout/messenger_button_send_blue_round.xml</a></span>: <span class="message">The resource <code>R.layout.messenger_button_send_blue_round</code> appears to be unused</span><br />
+<span class="location"><a href="../../res/layout/messenger_button_send_blue_small.xml">../../res/layout/messenger_button_send_blue_small.xml</a></span>: <span class="message">The resource <code>R.layout.messenger_button_send_blue_small</code> appears to be unused</span><br />
+<span class="location"><a href="../../res/layout/messenger_button_send_white_large.xml">../../res/layout/messenger_button_send_white_large.xml</a></span>: <span class="message">The resource <code>R.layout.messenger_button_send_white_large</code> appears to be unused</span><br />
+<span class="location"><a href="../../res/layout/messenger_button_send_white_round.xml">../../res/layout/messenger_button_send_white_round.xml</a></span>: <span class="message">The resource <code>R.layout.messenger_button_send_white_round</code> appears to be unused</span><br />
+<button id="UnusedResourcesDivLink" onclick="reveal('UnusedResourcesDiv');" />+ 9 More Occurrences...</button>
+<div id="UnusedResourcesDiv" style="display: none">
+<span class="location"><a href="../../res/layout/messenger_button_send_white_small.xml">../../res/layout/messenger_button_send_white_small.xml</a></span>: <span class="message">The resource <code>R.layout.messenger_button_send_white_small</code> appears to be unused</span><br />
+<span class="location"><a href="../../res/values/styles.xml">../../res/values/styles.xml</a>:43</span>: <span class="message">The resource <code>R.dimen.com_facebook_share_button_compound_drawable_padding</code> appears to be unused</span><br /><pre class="errorlines">
+<span class="lineno">  40</span>     &lt;dimen name="com_facebook_profilepictureview_preset_size_normal">100dp&lt;/dimen>
+<span class="lineno">  41</span>     &lt;dimen name="com_facebook_profilepictureview_preset_size_large">180dp&lt;/dimen>
+<span class="lineno">  42</span> 
+<span class="lineno">  43</span>     &lt;dimen <span class="errorspan">name="com_facebook_share_button_compound_drawable_padding">12dp&lt;/dimen></span>
+<span class="lineno">  44</span>     &lt;dimen name="com_facebook_share_button_padding_bottom">12dp&lt;/dimen>
+<span class="lineno">  45</span>     &lt;dimen name="com_facebook_share_button_padding_left">12dp&lt;/dimen>
+</pre>
+<span class="location"><a href="../../res/values/styles.xml">../../res/values/styles.xml</a>:44</span>: <span class="message">The resource <code>R.dimen.com_facebook_share_button_padding_bottom</code> appears to be unused</span><br /><pre class="errorlines">
+<span class="lineno">  41</span>     &lt;dimen name="com_facebook_profilepictureview_preset_size_large">180dp&lt;/dimen>
+<span class="lineno">  42</span> 
+<span class="lineno">  43</span>     &lt;dimen name="com_facebook_share_button_compound_drawable_padding">12dp&lt;/dimen>
+<span class="lineno">  44</span>     &lt;dimen <span class="errorspan">name="com_facebook_share_button_padding_bottom">12dp&lt;/dimen></span>
+<span class="lineno">  45</span>     &lt;dimen name="com_facebook_share_button_padding_left">12dp&lt;/dimen>
+<span class="lineno">  46</span>     &lt;dimen name="com_facebook_share_button_padding_right">16dp&lt;/dimen>
+</pre>
+<span class="location"><a href="../../res/values/styles.xml">../../res/values/styles.xml</a>:45</span>: <span class="message">The resource <code>R.dimen.com_facebook_share_button_padding_left</code> appears to be unused</span><br /><pre class="errorlines">
+<span class="lineno">  42</span> 
+<span class="lineno">  43</span>     &lt;dimen name="com_facebook_share_button_compound_drawable_padding">12dp&lt;/dimen>
+<span class="lineno">  44</span>     &lt;dimen name="com_facebook_share_button_padding_bottom">12dp&lt;/dimen>
+<span class="lineno">  45</span>     &lt;dimen <span class="errorspan">name="com_facebook_share_button_padding_left">12dp&lt;/dimen></span>
+<span class="lineno">  46</span>     &lt;dimen name="com_facebook_share_button_padding_right">16dp&lt;/dimen>
+<span class="lineno">  47</span>     &lt;dimen name="com_facebook_share_button_padding_top">12dp&lt;/dimen>
+</pre>
+<span class="location"><a href="../../res/values/styles.xml">../../res/values/styles.xml</a>:46</span>: <span class="message">The resource <code>R.dimen.com_facebook_share_button_padding_right</code> appears to be unused</span><br /><pre class="errorlines">
+<span class="lineno">  43</span>     &lt;dimen name="com_facebook_share_button_compound_drawable_padding">12dp&lt;/dimen>
+<span class="lineno">  44</span>     &lt;dimen name="com_facebook_share_button_padding_bottom">12dp&lt;/dimen>
+<span class="lineno">  45</span>     &lt;dimen name="com_facebook_share_button_padding_left">12dp&lt;/dimen>
+<span class="lineno">  46</span>     &lt;dimen <span class="errorspan">name="com_facebook_share_button_padding_right">16dp&lt;/dimen></span>
+<span class="lineno">  47</span>     &lt;dimen name="com_facebook_share_button_padding_top">12dp&lt;/dimen>
+<span class="lineno">  48</span>     &lt;color name="com_facebook_share_button_text_color">#FFFFFF&lt;/color>
+</pre>
+<span class="location"><a href="../../res/values/styles.xml">../../res/values/styles.xml</a>:47</span>: <span class="message">The resource <code>R.dimen.com_facebook_share_button_padding_top</code> appears to be unused</span><br /><pre class="errorlines">
+<span class="lineno">  44</span>     &lt;dimen name="com_facebook_share_button_padding_bottom">12dp&lt;/dimen>
+<span class="lineno">  45</span>     &lt;dimen name="com_facebook_share_button_padding_left">12dp&lt;/dimen>
+<span class="lineno">  46</span>     &lt;dimen name="com_facebook_share_button_padding_right">16dp&lt;/dimen>
+<span class="lineno">  47</span>     &lt;dimen <span class="errorspan">name="com_facebook_share_button_padding_top">12dp&lt;/dimen></span>
+<span class="lineno">  48</span>     &lt;color name="com_facebook_share_button_text_color">#FFFFFF&lt;/color>
+<span class="lineno">  49</span>     &lt;dimen name="com_facebook_share_button_text_size">16.0sp&lt;/dimen>
+</pre>
+<span class="location"><a href="../../res/values/styles.xml">../../res/values/styles.xml</a>:48</span>: <span class="message">The resource <code>R.color.com_facebook_share_button_text_color</code> appears to be unused</span><br /><pre class="errorlines">
+<span class="lineno">  45</span>     &lt;dimen name="com_facebook_share_button_padding_left">12dp&lt;/dimen>
+<span class="lineno">  46</span>     &lt;dimen name="com_facebook_share_button_padding_right">16dp&lt;/dimen>
+<span class="lineno">  47</span>     &lt;dimen name="com_facebook_share_button_padding_top">12dp&lt;/dimen>
+<span class="lineno">  48</span>     &lt;color <span class="errorspan">name="com_facebook_share_button_text_color">#FFFFFF&lt;/color></span>
+<span class="lineno">  49</span>     &lt;dimen name="com_facebook_share_button_text_size">16.0sp&lt;/dimen>
+<span class="lineno">  50</span> 
+</pre>
+<span class="location"><a href="../../res/values/styles.xml">../../res/values/styles.xml</a>:49</span>: <span class="message">The resource <code>R.dimen.com_facebook_share_button_text_size</code> appears to be unused</span><br /><pre class="errorlines">
+<span class="lineno">  46</span>     &lt;dimen name="com_facebook_share_button_padding_right">16dp&lt;/dimen>
+<span class="lineno">  47</span>     &lt;dimen name="com_facebook_share_button_padding_top">12dp&lt;/dimen>
+<span class="lineno">  48</span>     &lt;color name="com_facebook_share_button_text_color">#FFFFFF&lt;/color>
+<span class="lineno">  49</span>     &lt;dimen <span class="errorspan">name="com_facebook_share_button_text_size">16.0sp&lt;/dimen></span>
+<span class="lineno">  50</span> 
+<span class="lineno">  51</span>     &lt;dimen name="com_facebook_tooltip_horizontal_padding">10dp&lt;/dimen>
+</pre>
+<span class="location"><a href="../../res/values/styles.xml">../../res/values/styles.xml</a>:51</span>: <span class="message">The resource <code>R.dimen.com_facebook_tooltip_horizontal_padding</code> appears to be unused</span><br /><pre class="errorlines">
+<span class="lineno">  48</span>     &lt;color name="com_facebook_share_button_text_color">#FFFFFF&lt;/color>
+<span class="lineno">  49</span>     &lt;dimen name="com_facebook_share_button_text_size">16.0sp&lt;/dimen>
+<span class="lineno">  50</span> 
+<span class="lineno">  51</span>     &lt;dimen <span class="errorspan">name="com_facebook_tooltip_horizontal_padding">10dp&lt;/dimen></span>
+<span class="lineno">  52</span> 
+<span class="lineno">  53</span>     &lt;style name="tooltip_bubble_text">
+</pre>
+</div>
+</div>
+<div class="metadata">Priority: 3 / 10<br/>
+Category: Performance</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Unused resources.</div>
+<div class="explanation">
+Unused resources make applications larger and slow down builds.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "UnusedResources" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+
+<a name="Usability:Typography"></a>
+<div class="category"><a href="#" title="Return to top">Usability:Typography</a><div class="categorySeparator"></div>
+</div>
+<a name="TypographyEllipsis"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">TypographyEllipsis: Ellipsis string can be replaced with ellipsis character</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../res/values/strings.xml">../../res/values/strings.xml</a>:32</span>: <span class="message">Replace "..." with ellipsis character (&#8230;, &amp;#8230;) ?</span><br /><pre class="errorlines">
+<span class="lineno">  29</span>     &lt;string name="com_facebook_loginview_logged_in_using_facebook">Logged in using Facebook&lt;/string>
+<span class="lineno">  30</span>     &lt;string name="com_facebook_loginview_log_out_action">Log out&lt;/string>
+<span class="lineno">  31</span>     &lt;string name="com_facebook_loginview_cancel_action">Cancel&lt;/string>
+<span class="lineno">  32</span>     &lt;string name="com_facebook_loading"><span class="errorspan">Loading...&lt;/string></span>
+<span class="lineno">  33</span>     &lt;string name="com_facebook_internet_permission_error_title">AndroidManifest Error&lt;/string>
+<span class="lineno">  34</span>     &lt;string name="com_facebook_internet_permission_error_message">WebView login requires INTERNET permission&lt;/string>
+</pre>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Eclipse/ADT & Android Studio/IntelliJ&nbsp;<img alt="Fix" border="0" align="top" src="lint-results_files/lint-run.png" />
+<br>
+Priority: 5 / 10<br/>
+Category: Usability:Typography</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Ellipsis string can be replaced with ellipsis character.</div>
+<div class="explanation">
+You can replace the string "..." with a dedicated ellipsis character, ellipsis character (&#8230;, &amp;#8230;). This can help make the text more readable.
+</div>
+<br/><div class="moreinfo">More info: <a href="http://en.wikipedia.org/wiki/Ellipsis">http://en.wikipedia.org/wiki/Ellipsis</a>
+</div><br/>To suppress this error, use the issue id "TypographyEllipsis" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+
+<a name="Usability:Icons"></a>
+<div class="category"><a href="#" title="Return to top">Usability:Icons</a><div class="categorySeparator"></div>
+</div>
+<a name="IconDensities"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">IconDensities: Icon densities validation</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../res/drawable-hdpi">../../res/drawable-hdpi</a></span>: <span class="message">Missing the following drawables in <code>drawable-hdpi</code>: com_facebook_profile_picture_blank_portrait.png, com_facebook_profile_picture_blank_square.png</span><br />
+<span class="location"><a href="../../res/drawable-xhdpi">../../res/drawable-xhdpi</a></span>: <span class="message">Missing the following drawables in <code>drawable-xhdpi</code>: com_facebook_profile_picture_blank_portrait.png, com_facebook_profile_picture_blank_square.png</span><br />
+<span class="location"><a href="../../res/drawable-xxhdpi">../../res/drawable-xxhdpi</a></span>: <span class="message">Missing the following drawables in <code>drawable-xxhdpi</code>: com_facebook_close.png, com_facebook_profile_picture_blank_portrait.png, com_facebook_profile_picture_blank_square.png, com_facebook_tooltip_black_background.9.png, com_facebook_tooltip_black_bottomnub.png... (6 more)</span><br />
+</div>
+<div class="metadata">Priority: 4 / 10<br/>
+Category: Usability:Icons</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Icon densities validation.</div>
+<div class="explanation">
+Icons will look best if a custom version is provided for each of the major screen density classes (low, medium, high, extra high). This lint check identifies icons which do not have complete coverage across the densities.<br/>
+<br/>
+Low density is not really used much anymore, so this check ignores the ldpi density. To force lint to include it, set the environment variable <code>ANDROID_LINT_INCLUDE_LDPI=true</code>. For more information on current density usage, see <a href="http://developer.android.com/resources/dashboard/screens.html">http://developer.android.com/resources/dashboard/screens.html</a>
+</div>
+<br/><div class="moreinfo">More info: <a href="http://developer.android.com/guide/practices/screens_support.html">http://developer.android.com/guide/practices/screens_support.html</a>
+</div><br/>To suppress this error, use the issue id "IconDensities" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="IconMissingDensityFolder"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">IconMissingDensityFolder: Missing density folder</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../res">../../res</a></span>: <span class="message">Missing density variation folders in <code>res</code>: drawable-xxxhdpi</span><br />
+</div>
+<div class="metadata">Priority: 3 / 10<br/>
+Category: Usability:Icons</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Missing density folder.</div>
+<div class="explanation">
+Icons will look best if a custom version is provided for each of the major screen density classes (low, medium, high, extra-high, extra-extra-high). This lint check identifies folders which are missing, such as <code>drawable-hdpi</code>.<br/>
+Low density is not really used much anymore, so this check ignores the ldpi density. To force lint to include it, set the environment variable <code>ANDROID_LINT_INCLUDE_LDPI=true</code>. For more information on current density usage, see <a href="http://developer.android.com/resources/dashboard/screens.html">http://developer.android.com/resources/dashboard/screens.html</a>
+</div>
+<br/><div class="moreinfo">More info: <a href="http://developer.android.com/guide/practices/screens_support.html">http://developer.android.com/guide/practices/screens_support.html</a>
+</div><br/>To suppress this error, use the issue id "IconMissingDensityFolder" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+
+<a name="Usability"></a>
+<div class="category"><a href="#" title="Return to top">Usability</a><div class="categorySeparator"></div>
+</div>
+<a name="ViewConstructor"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">ViewConstructor: Missing View constructors for XML inflation</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../src/com/facebook/share/internal/LikeButton.java">../../src/com/facebook/share/internal/LikeButton.java</a>:34</span>: <span class="message">Custom view <code>LikeButton</code> is missing constructor used by tools: <code>(Context)</code> or <code>(Context,AttributeSet)</code> or <code>(Context,AttributeSet,int)</code></span><br /><pre class="errorlines">
+<span class="lineno">  31</span>  * Android. Use of any of the classes in this package is unsupported, and they may be modified or
+<span class="lineno">  32</span>  * removed without warning at any time.
+<span class="lineno">  33</span>  */
+<span class="lineno">  34</span> public class <span class="errorspan">LikeButton extends FacebookButtonBase {</span>
+<span class="lineno">  35</span>     public LikeButton(Context context, boolean isLiked) {
+<span class="lineno">  36</span>         super(context, null, 0, 0, AnalyticsEvents.EVENT_LIKE_BUTTON_CREATE, 0);
+</pre>
+</div>
+<div class="metadata">Priority: 3 / 10<br/>
+Category: Usability</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Missing View constructors for XML inflation.</div>
+<div class="explanation">
+Some layout tools (such as the Android layout editor for Studio &amp; Eclipse) needs to find a constructor with one of the following signatures:<br/>
+* <code>View(Context context)</code><br/>
+* <code>View(Context context, AttributeSet attrs)</code><br/>
+* <code>View(Context context, AttributeSet attrs, int defStyle)</code><br/>
+<br/>
+If your custom view needs to perform initialization which does not apply when used in a layout editor, you can surround the given code with a check to see if <code>View#isInEditMode()</code> is false, since that method will return <code>false</code> at runtime but true within a user interface editor.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "ViewConstructor" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+
+<a name="Accessibility"></a>
+<div class="category"><a href="#" title="Return to top">Accessibility</a><div class="categorySeparator"></div>
+</div>
+<a name="ClickableViewAccessibility"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">ClickableViewAccessibility: Accessibility in Custom Views</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../src/com/facebook/internal/WebDialog.java">../../src/com/facebook/internal/WebDialog.java</a>:407</span>: <span class="message"><code>com/facebook/internal/WebDialog$4#onTouch</code> should call <code>View#performClick</code> when a click is detected</span><br /><pre class="errorlines">
+<span class="lineno"> 404</span>         webView.setFocusableInTouchMode(true);
+<span class="lineno"> 405</span>         webView.setOnTouchListener(new View.OnTouchListener() {
+<span class="lineno"> 406</span>             @Override
+<span class="lineno"> 407</span>             public boolean <span class="errorspan">onTouch(View v, MotionEvent event) {</span>
+<span class="lineno"> 408</span>                 if (!v.hasFocus())
+<span class="lineno"> 409</span>                 {
+</pre>
+</div>
+<div class="metadata">Priority: 6 / 10<br/>
+Category: Accessibility</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Accessibility in Custom Views.</div>
+<div class="explanation">
+If a <code>View</code> that overrides <code>onTouchEvent</code> or uses an <code>OnTouchListener</code> does not also implement <code>performClick</code> and call it when clicks are detected, the <code>View</code> may not handle accessibility actions properly. Logic handling the click actions should ideally be placed in <code>View#performClick</code> as some accessibility services invoke <code>performClick</code> when a click action should occur.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "ClickableViewAccessibility" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="ContentDescription"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">ContentDescription: Image without <code>contentDescription</code></a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../res/layout/com_facebook_tooltip_bubble.xml">../../res/layout/com_facebook_tooltip_bubble.xml</a>:35</span>: <span class="message">[Accessibility] Missing <code>contentDescription</code> attribute on image</span><br /><pre class="errorlines">
+<span class="lineno">  32</span>     android:layout_below="@+id/com_facebook_tooltip_bubble_view_top_pointer"
+<span class="lineno">  33</span>     android:layout_centerHorizontal="true"
+<span class="lineno">  34</span>     android:background="@drawable/com_facebook_tooltip_blue_background">
+<span class="lineno">  35</span>       <span class="errorspan">&lt;ImageView </span>
+<span class="lineno">  36</span>         android:id="@+id/com_facebook_button_xout"
+<span class="lineno">  37</span>         android:layout_width="wrap_content"
+</pre>
+<span class="location"><a href="../../res/layout/com_facebook_tooltip_bubble.xml">../../res/layout/com_facebook_tooltip_bubble.xml</a>:55</span>: <span class="message">[Accessibility] Missing <code>contentDescription</code> attribute on image</span><br /><pre class="errorlines">
+<span class="lineno">  52</span>           style="@style/tooltip_bubble_text"
+<span class="lineno">  53</span>           />
+<span class="lineno">  54</span>   &lt;/RelativeLayout>
+<span class="lineno">  55</span>   <span class="errorspan">&lt;ImageView</span>
+<span class="lineno">  56</span>       android:id="@+id/com_facebook_tooltip_bubble_view_top_pointer"
+<span class="lineno">  57</span>       android:layout_width="wrap_content"
+</pre>
+<span class="location"><a href="../../res/layout/com_facebook_tooltip_bubble.xml">../../res/layout/com_facebook_tooltip_bubble.xml</a>:64</span>: <span class="message">[Accessibility] Missing <code>contentDescription</code> attribute on image</span><br /><pre class="errorlines">
+<span class="lineno">  61</span>       android:layout_marginBottom="-10dp"
+<span class="lineno">  62</span>       android:src="@drawable/com_facebook_tooltip_blue_topnub"
+<span class="lineno">  63</span>       />
+<span class="lineno">  64</span>   <span class="errorspan">&lt;ImageView</span>
+<span class="lineno">  65</span>       android:id="@+id/com_facebook_tooltip_bubble_view_bottom_pointer"
+<span class="lineno">  66</span>       android:layout_width="wrap_content"
+</pre>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Eclipse/ADT & Android Studio/IntelliJ&nbsp;<img alt="Fix" border="0" align="top" src="lint-results_files/lint-run.png" />
+<br>
+Priority: 3 / 10<br/>
+Category: Accessibility</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Image without <code>contentDescription</code></div>
+<div class="explanation">
+Non-textual widgets like ImageViews and ImageButtons should use the <code>contentDescription</code> attribute to specify a textual description of the widget such that screen readers and other accessibility tools can adequately describe the user interface.<br/>
+<br/>
+Note that elements in application screens that are purely decorative and do not provide any content or enable a user action should not have accessibility content descriptions. In this case, just suppress the lint warning with a tools:ignore="ContentDescription" attribute.<br/>
+<br/>
+Note that for text fields, you should not set both the <code>hint</code> and the <code>contentDescription</code> attributes since the hint will never be shown. Just set the <code>hint</code>. See <a href="http://developer.android.com/guide/topics/ui/accessibility/checklist.html#special-cases">http://developer.android.com/guide/topics/ui/accessibility/checklist.html#special-cases</a>.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "ContentDescription" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+
+<a name="MissingIssues"></a>
+<div class="category">Disabled Checks<div class="categorySeparator"></div>
+</div>
+The following issues were not run by lint, either because the check is not enabled by default, or because it was disabled with a command line flag or via one or more lint.xml configuration files in the project directories.
+<br/><br/>
+<a name="BackButton"></a>
+<div class="issue">
+<div class="id">BackButton<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+Priority: 6 / 10<br/>
+Category: Usability</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Back button.</div>
+<div class="explanation">
+According to the Android Design Guide,<br/>
+<br/>
+"Other platforms use an explicit back button with label to allow the user to navigate up the application's hierarchy. Instead, Android uses the main action bar's app icon for hierarchical navigation and the navigation bar's back button for temporal navigation."<br/>
+This check is not very sophisticated (it just looks for buttons with the label "Back"), so it is disabled by default to not trigger on common scenarios like pairs of Back/Next buttons to paginate through screens.
+</div>
+<br/><div class="moreinfo">More info: <a href="http://developer.android.com/design/patterns/pure-android.html">http://developer.android.com/design/patterns/pure-android.html</a>
+</div><br/>To suppress this error, use the issue id "BackButton" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="EasterEgg"></a>
+<div class="issue">
+<div class="id">EasterEgg<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+Priority: 6 / 10<br/>
+Category: Security</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Code contains easter egg.</div>
+<div class="explanation">
+An "easter egg" is code deliberately hidden in the code, both from potential users and even from other developers. This lint check looks for code which looks like it may be hidden from sight.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "EasterEgg" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="FieldGetter"></a>
+<div class="issue">
+<div class="id">FieldGetter<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+Priority: 4 / 10<br/>
+Category: Performance</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Using getter instead of field.</div>
+<div class="explanation">
+Accessing a field within the class that defines a getter for that field is at least 3 times faster than calling the getter. For simple getters that do nothing other than return the field, you might want to just reference the local field directly instead.<br/>
+<br/>
+<b>NOTE</b>: As of Android 2.3 (Gingerbread), this optimization is performed automatically by Dalvik, so there is no need to change your code; this is only relevant if you are targeting older versions of Android.
+</div>
+<br/><div class="moreinfo">More info: <a href="http://developer.android.com/guide/practices/design/performance.html#internal_get_set">http://developer.android.com/guide/practices/design/performance.html#internal_get_set</a>
+</div><br/>To suppress this error, use the issue id "FieldGetter" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="IconExpectedSize"></a>
+<div class="issue">
+<div class="id">IconExpectedSize<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+Priority: 5 / 10<br/>
+Category: Usability:Icons</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Icon has incorrect size.</div>
+<div class="explanation">
+There are predefined sizes (for each density) for launcher icons. You should follow these conventions to make sure your icons fit in with the overall look of the platform.
+</div>
+<br/><div class="moreinfo">More info: <a href="http://developer.android.com/design/style/iconography.html">http://developer.android.com/design/style/iconography.html</a>
+</div><br/>To suppress this error, use the issue id "IconExpectedSize" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="MissingTranslation"></a>
+<div class="issue">
+<div class="id">MissingTranslation<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Eclipse/ADT&nbsp;<img alt="Fix" border="0" align="top" src="lint-results_files/lint-run.png" />
+<br>
+Disabled By: Project lint.xml file<br/>
+Priority: 8 / 10<br/>
+Category: Correctness:Messages</div>
+Severity: <span class="error">Fatal</span><div class="summary">
+Explanation: Incomplete translation.</div>
+<div class="explanation">
+If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.<br/>
+<br/>
+If the string should <b>not</b> be translated, you can add the attribute <code>translatable="false"</code> on the <code>&lt;string></code> element, or you can define all your non-translatable strings in a resource file called <code>donottranslate.xml</code>. Or, you can ignore the issue with a <code>tools:ignore="MissingTranslation"</code> attribute.<br/>
+<br/>
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable <code>ANDROID_LINT_COMPLETE_REGIONS</code>.<br/>
+<br/>
+You can tell lint (and other tools) which language is the default language in your <code>res/values/</code> folder by specifying <code>tools:locale="languageCode"</code> for the root <code>&lt;resources></code> element in your resource file. (The <code>tools</code> prefix refers to the namespace declaration <code>http://schemas.android.com/tools</code>.)
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "MissingTranslation" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="NegativeMargin"></a>
+<div class="issue">
+<div class="id">NegativeMargin<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+Priority: 4 / 10<br/>
+Category: Usability</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Negative Margins.</div>
+<div class="explanation">
+Margin values should be positive. Negative values are generally a sign that you are making assumptions about views surrounding the current one, or may be tempted to turn off child clipping to allow a view to escape its parent. Turning off child clipping to do this not only leads to poor graphical performance, it also results in wrong touch event handling since touch events are based strictly on a chain of parent-rect hit tests. Finally, making assumptions about the size of strings can lead to localization problems.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "NegativeMargin" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="NewerVersionAvailable"></a>
+<div class="issue">
+<div class="id">NewerVersionAvailable<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Android Studio/IntelliJ&nbsp;<img alt="Fix" border="0" align="top" src="lint-results_files/lint-run.png" />
+<br>
+Disabled By: Default<br/>
+Priority: 4 / 10<br/>
+Category: Correctness</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Newer Library Versions Available.</div>
+<div class="explanation">
+This detector checks with a central repository to see if there are newer versions available for the dependencies used by this project.<br/>
+This is similar to the <code>GradleDependency</code> check, which checks for newer versions available in the Android SDK tools and libraries, but this works with any MavenCentral dependency, and connects to the library every time, which makes it more flexible but also <b>much</b> slower.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "NewerVersionAvailable" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="SelectableText"></a>
+<div class="issue">
+<div class="id">SelectableText<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Android Studio/IntelliJ&nbsp;<img alt="Fix" border="0" align="top" src="lint-results_files/lint-run.png" />
+<br>
+Disabled By: Default<br/>
+Priority: 7 / 10<br/>
+Category: Usability</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Dynamic text should probably be selectable.</div>
+<div class="explanation">
+If a <code>&lt;TextView></code> is used to display data, the user might want to copy that data and paste it elsewhere. To allow this, the <code>&lt;TextView></code> should specify <code>android:textIsSelectable="true"</code>.<br/>
+<br/>
+This lint check looks for TextViews which are likely to be displaying data: views whose text is set dynamically. This value will be ignored on platforms older than API 11, so it is okay to set it regardless of your <code>minSdkVersion</code>.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "SelectableText" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="StopShip"></a>
+<div class="issue">
+<div class="id">StopShip<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Android Studio/IntelliJ&nbsp;<img alt="Fix" border="0" align="top" src="lint-results_files/lint-run.png" />
+<br>
+Disabled By: Default<br/>
+Priority: 10 / 10<br/>
+Category: Correctness</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Code contains <code>STOPSHIP</code> marker.</div>
+<div class="explanation">
+Using the comment <code>// STOPSHIP</code> can be used to flag code that is incomplete but checked in. This comment marker can be used to indicate that the code should not be shipped until the issue is addressed, and lint will look for these.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "StopShip" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="TypographyQuotes"></a>
+<div class="issue">
+<div class="id">TypographyQuotes<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Eclipse/ADT & Android Studio/IntelliJ&nbsp;<img alt="Fix" border="0" align="top" src="lint-results_files/lint-run.png" />
+<br>
+Disabled By: Default<br/>
+Priority: 5 / 10<br/>
+Category: Usability:Typography</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Straight quotes can be replaced with curvy quotes.</div>
+<div class="explanation">
+Straight single quotes and double quotes, when used as a pair, can be replaced by "curvy quotes" (or directional quotes). This can make the text more readable.<br/>
+<br/>
+Note that you should never use grave accents and apostrophes to quote, `like this'.<br/>
+<br/>
+(Also note that you should not use curvy quotes for code fragments.)
+</div>
+<br/><div class="moreinfo">More info: <a href="http://en.wikipedia.org/wiki/Quotation_mark">http://en.wikipedia.org/wiki/Quotation_mark</a>
+</div><br/>To suppress this error, use the issue id "TypographyQuotes" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="UnusedIds"></a>
+<div class="issue">
+<div class="id">UnusedIds<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+Priority: 1 / 10<br/>
+Category: Performance</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Unused id.</div>
+<div class="explanation">
+This resource id definition appears not to be needed since it is not referenced from anywhere. Having id definitions, even if unused, is not necessarily a bad idea since they make working on layouts and menus easier, so there is not a strong reason to delete these.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "UnusedIds" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+
+<a name="SuppressInfo"></a>
+<div class="category">Suppressing Warnings and Errors<div class="categorySeparator"></div>
+</div>
+Lint errors can be suppressed in a variety of ways:<br/>
+<br/>
+1. With a @SuppressLint annotation in the Java code<br/>
+2. With a tools:ignore attribute in the XML file<br/>
+3. With a lint.xml configuration file in the project<br/>
+4. With a lint.xml configuration file passed to lint via the --config flag<br/>
+5. With the --ignore flag passed to lint.<br/>
+<br/>
+To suppress a lint warning with an annotation, add a @SuppressLint("id") annotation on the class, method or variable declaration closest to the warning instance you want to disable. The id can be one or more issue id's, such as "UnusedResources" or {"UnusedResources","UnusedIds"}, or it can be "all" to suppress all lint warnings in the given scope.<br/>
+<br/>
+To suppress a lint warning in an XML file, add a tools:ignore="id" attribute on the element containing the error, or one of its surrounding elements. You also need to define the namespace for the tools prefix on the root element in your document, next to the xmlns:android declaration:<br/>
+* xmlns:tools="http://schemas.android.com/tools"<br/>
+<br/>
+To suppress lint warnings with a configuration XML file, create a file named lint.xml and place it at the root directory of the project in which it applies. (If you use the Eclipse plugin's Lint view, you can suppress errors there via the toolbar and Eclipse will create the lint.xml file for you.).<br/>
+<br/>
+The format of the lint.xml file is something like the following:<br/>
+<br/>
+&lt;?xml version="1.0" encoding="UTF-8"?><br/>
+&lt;lint><br/>
+    &lt;!-- Disable this given check in this project --><br/>
+    &lt;issue id="IconMissingDensityFolder" severity="ignore" /><br/>
+<br/>
+    &lt;!-- Ignore the ObsoleteLayoutParam issue in the given files --><br/>
+    &lt;issue id="ObsoleteLayoutParam"><br/>
+        &lt;ignore path="res/layout/activation.xml" /><br/>
+        &lt;ignore path="res/layout-xlarge/activation.xml" /><br/>
+    &lt;/issue><br/>
+<br/>
+    &lt;!-- Ignore the UselessLeaf issue in the given file --><br/>
+    &lt;issue id="UselessLeaf"><br/>
+        &lt;ignore path="res/layout/main.xml" /><br/>
+    &lt;/issue><br/>
+<br/>
+    &lt;!-- Change the severity of hardcoded strings to "error" --><br/>
+    &lt;issue id="HardcodedText" severity="error" /><br/>
+&lt;/lint><br/>
+<br/>
+To suppress lint checks from the command line, pass the --ignore flag with a comma separated list of ids to be suppressed, such as:<br/>
+"lint --ignore UnusedResources,UselessLeaf /my/project/path"<br/>
+
+
+</body>
+</html>

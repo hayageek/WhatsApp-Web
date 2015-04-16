@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="jquery.qrcode-0.11.0.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            initiate();
+
+        });
+
+        function initiate() {
+            if ("WebSocket" in window) {
+                var ws = new WebSocket("ws://nodejs-whatsappauth.rhcloud.com:8000/gencode");
+                ws.onopen = function() {
+                    var hello = {
+                        op: 'hello'
+                    };
+                    ws.send(JSON.stringify(hello));
+
+                };
+                ws.onmessage = function(evt) {
+					$("#qrcode").html("");                
+					
+                    var obj = JSON.parse(evt.data);
+                    console.log("Receivied:" + JSON.stringify(obj));
+
+                    if (obj.op == 'hello') 
+                    {
+                        console.log("### Got hello token " + obj.token);
+
+
+                        //Generate QR Code and show to user.
+                        $("#qrcode").qrcode({
+                            "width": 100,
+                            "height": 100,
+                            "text": obj.token
+                        });
+                    } else if (obj.op == 'authdone') 
+                    {
+                        console.log("### Got auth token " + obj.accessToken);
+                        ws.close();
+                        $("#qrcode").hide();
+
+                        $("#profile").html("<img src='iconLoading.gif' />");
+                        getProfileData(obj.accessToken);
+                    }
+
+
+                };
+
+
+                ws.onclose = function() {
+                    console.log("Connection is closed...");
+                };
+            } else {
+                alert("WebSocket NOT supported by your Browser!");
+            }
+        }
+
+	
+        function getProfileData(token) {
+            var url = "https://graph.facebook.com/me?access_token=" + token;
+            $.get(url, function(obj) {
+                var str = "";
+                str += "<b>Your Name:</b>" + obj.first_name + "  " + obj.last_name + "<br>";
+                str += "<b>Gender:</b>" + obj.gender + "<br>";
+                str += "<b>Photo:</b><img src='https://graph.facebook.com/me/picture?access_token=" + token + "'/>" + "<br>";
+                str += "Profile Link:  <a href='" + obj.link + "'>" + obj.link + "</a>";
+                $("#profile").html(str);
+
+            }, "json").error(function(err) {
+
+
+            });;
+
+        }
+    </script>
+
+    <body>
+        <br>
+        <br>
+        <div align="center">
+            <div id="qrcode">
+              <img src='iconLoading.gif' />
+            </div>
+            <div id="profile"></div>
+        </div>
+
+    </body>
+
+</html>

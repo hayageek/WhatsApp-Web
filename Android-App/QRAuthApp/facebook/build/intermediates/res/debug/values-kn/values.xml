@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/Users/ravishanker/git/facebook-android-sdk/facebook/res/values-kn/messenger_button_strings.xml -->
+    <eat-comment/>
+    <string name="messenger_send_button_text">ಕಳುಹಿಸು</string>
+</resources>

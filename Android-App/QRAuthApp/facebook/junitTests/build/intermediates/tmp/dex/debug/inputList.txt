@@ -1,0 +1,6 @@
+/Users/ravishanker/git/facebook-android-sdk/facebook/junitTests/build/intermediates/classes/debug
+/Users/ravishanker/git/facebook-android-sdk/facebook/junitTests/build/intermediates/pre-dexed/debug/bolts-android-1.1.2-0c6ce2bb7fa0cfff6ef6f278b1e56ce1a00dfe55.jar
+/Users/ravishanker/git/facebook-android-sdk/facebook/junitTests/build/intermediates/pre-dexed/debug/classes-43d92162a9572ff17ab1fe6b2949beb7c3bb7c4f.jar
+/Users/ravishanker/git/facebook-android-sdk/facebook/junitTests/build/intermediates/pre-dexed/debug/support-v4-18.0.0-e0e5754f01ce538b1d8a1b4888bf7ee81997597e.jar
+/Users/ravishanker/git/facebook-android-sdk/facebook/junitTests/build/intermediates/pre-dexed/debug/classes-a6079d48e4ad22d5127c24afe4083125b621d242.jar
+/Users/ravishanker/git/facebook-android-sdk/facebook/junitTests/build/intermediates/pre-dexed/debug/android-support-v4-8a07df4a8cbf7937f86592c5edc4031ca3807dd1.jar
