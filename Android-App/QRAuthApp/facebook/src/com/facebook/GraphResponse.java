@@ -23,6 +23,8 @@ package com.facebook;
 import com.facebook.internal.FacebookRequestErrorClassification;
 import com.facebook.internal.Logger;
 import com.facebook.internal.Utility;
+import io.github.pixee.security.HostValidator;
+import io.github.pixee.security.Urls;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -208,7 +210,7 @@ public class GraphResponse {
 
         GraphRequest pagingRequest;
         try {
-            pagingRequest = new GraphRequest(request.getAccessToken(), new URL(link));
+            pagingRequest = new GraphRequest(request.getAccessToken(), Urls.create(link, Urls.HTTP_PROTOCOLS, HostValidator.DENY_COMMON_INFRASTRUCTURE_TARGETS));
         } catch (MalformedURLException e) {
             return null;
         }
