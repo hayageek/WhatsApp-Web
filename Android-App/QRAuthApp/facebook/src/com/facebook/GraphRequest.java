@@ -799,7 +799,7 @@ public class GraphRequest {
                                     : null;
                             if (debugMessage != null && debugMessageType != null) {
                                 LoggingBehavior behavior = LoggingBehavior.GRAPH_API_DEBUG_INFO;
-                                if (debugMessageType.equals("warning")) {
+                                if ("warning".equals(debugMessageType)) {
                                     behavior = LoggingBehavior.GRAPH_API_DEBUG_WARNING;
                                 }
                                 if (!Utility.isNullOrEmpty(debugMessageLink)) {
@@ -1642,7 +1642,7 @@ public class GraphRequest {
         while (keyIterator.hasNext()) {
             String key = keyIterator.next();
             Object value = graphObject.opt(key);
-            boolean passByValue = isOGAction && key.equalsIgnoreCase("image");
+            boolean passByValue = isOGAction && "image".equalsIgnoreCase(key);
             processGraphObjectProperty(key, value, serializer, passByValue);
         }
     }

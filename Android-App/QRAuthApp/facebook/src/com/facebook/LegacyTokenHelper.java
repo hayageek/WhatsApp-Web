@@ -443,75 +443,75 @@ final class LegacyTokenHelper {
 
         String valueType = json.getString(JSON_VALUE_TYPE);
 
-        if (valueType.equals(TYPE_BOOLEAN)) {
+        if (TYPE_BOOLEAN.equals(valueType)) {
             bundle.putBoolean(key, json.getBoolean(JSON_VALUE));
-        } else if (valueType.equals(TYPE_BOOLEAN_ARRAY)) {
+        } else if (TYPE_BOOLEAN_ARRAY.equals(valueType)) {
             JSONArray jsonArray = json.getJSONArray(JSON_VALUE);
             boolean[] array = new boolean[jsonArray.length()];
             for (int i = 0; i < array.length; i++) {
                 array[i] = jsonArray.getBoolean(i);
             }
             bundle.putBooleanArray(key, array);
-        } else if (valueType.equals(TYPE_BYTE)) {
+        } else if (TYPE_BYTE.equals(valueType)) {
             bundle.putByte(key, (byte)json.getInt(JSON_VALUE));
-        } else if (valueType.equals(TYPE_BYTE_ARRAY)) {
+        } else if (TYPE_BYTE_ARRAY.equals(valueType)) {
             JSONArray jsonArray = json.getJSONArray(JSON_VALUE);
             byte[] array = new byte[jsonArray.length()];
             for (int i = 0; i < array.length; i++) {
                 array[i] = (byte)jsonArray.getInt(i);
             }
             bundle.putByteArray(key, array);
-        } else if (valueType.equals(TYPE_SHORT)) {
+        } else if (TYPE_SHORT.equals(valueType)) {
             bundle.putShort(key, (short)json.getInt(JSON_VALUE));
-        } else if (valueType.equals(TYPE_SHORT_ARRAY)) {
+        } else if (TYPE_SHORT_ARRAY.equals(valueType)) {
             JSONArray jsonArray = json.getJSONArray(JSON_VALUE);
             short[] array = new short[jsonArray.length()];
             for (int i = 0; i < array.length; i++) {
                 array[i] = (short)jsonArray.getInt(i);
             }
             bundle.putShortArray(key, array);
-        } else if (valueType.equals(TYPE_INTEGER)) {
+        } else if (TYPE_INTEGER.equals(valueType)) {
             bundle.putInt(key, json.getInt(JSON_VALUE));
-        } else if (valueType.equals(TYPE_INTEGER_ARRAY)) {
+        } else if (TYPE_INTEGER_ARRAY.equals(valueType)) {
             JSONArray jsonArray = json.getJSONArray(JSON_VALUE);
             int[] array = new int[jsonArray.length()];
             for (int i = 0; i < array.length; i++) {
                 array[i] = jsonArray.getInt(i);
             }
             bundle.putIntArray(key, array);
-        } else if (valueType.equals(TYPE_LONG)) {
+        } else if (TYPE_LONG.equals(valueType)) {
             bundle.putLong(key, json.getLong(JSON_VALUE));
-        } else if (valueType.equals(TYPE_LONG_ARRAY)) {
+        } else if (TYPE_LONG_ARRAY.equals(valueType)) {
             JSONArray jsonArray = json.getJSONArray(JSON_VALUE);
             long[] array = new long[jsonArray.length()];
             for (int i = 0; i < array.length; i++) {
                 array[i] = jsonArray.getLong(i);
             }
             bundle.putLongArray(key, array);
-        } else if (valueType.equals(TYPE_FLOAT)) {
+        } else if (TYPE_FLOAT.equals(valueType)) {
             bundle.putFloat(key, (float)json.getDouble(JSON_VALUE));
-        } else if (valueType.equals(TYPE_FLOAT_ARRAY)) {
+        } else if (TYPE_FLOAT_ARRAY.equals(valueType)) {
             JSONArray jsonArray = json.getJSONArray(JSON_VALUE);
             float[] array = new float[jsonArray.length()];
             for (int i = 0; i < array.length; i++) {
                 array[i] = (float)jsonArray.getDouble(i);
             }
             bundle.putFloatArray(key, array);
-        } else if (valueType.equals(TYPE_DOUBLE)) {
+        } else if (TYPE_DOUBLE.equals(valueType)) {
             bundle.putDouble(key, json.getDouble(JSON_VALUE));
-        } else if (valueType.equals(TYPE_DOUBLE_ARRAY)) {
+        } else if (TYPE_DOUBLE_ARRAY.equals(valueType)) {
             JSONArray jsonArray = json.getJSONArray(JSON_VALUE);
             double[] array = new double[jsonArray.length()];
             for (int i = 0; i < array.length; i++) {
                 array[i] = jsonArray.getDouble(i);
             }
             bundle.putDoubleArray(key, array);
-        } else if (valueType.equals(TYPE_CHAR)) {
+        } else if (TYPE_CHAR.equals(valueType)) {
             String charString = json.getString(JSON_VALUE);
             if (charString != null && charString.length() == 1) {
                 bundle.putChar(key, charString.charAt(0));
             }
-        } else if (valueType.equals(TYPE_CHAR_ARRAY)) {
+        } else if (TYPE_CHAR_ARRAY.equals(valueType)) {
             JSONArray jsonArray = json.getJSONArray(JSON_VALUE);
             char[] array = new char[jsonArray.length()];
             for (int i = 0; i < array.length; i++) {
@@ -521,9 +521,9 @@ final class LegacyTokenHelper {
                 }
             }
             bundle.putCharArray(key, array);
-        } else if (valueType.equals(TYPE_STRING)) {
+        } else if (TYPE_STRING.equals(valueType)) {
             bundle.putString(key, json.getString(JSON_VALUE));
-        } else if (valueType.equals(TYPE_STRING_LIST)) {
+        } else if (TYPE_STRING_LIST.equals(valueType)) {
             JSONArray jsonArray = json.getJSONArray(JSON_VALUE);
             int numStrings = jsonArray.length();
             ArrayList<String> stringList = new ArrayList<String>(numStrings);
@@ -534,7 +534,7 @@ final class LegacyTokenHelper {
                         jsonStringValue == JSONObject.NULL ? null : (String)jsonStringValue);
             }
             bundle.putStringArrayList(key, stringList);
-        } else if (valueType.equals(TYPE_ENUM)) {
+        } else if (TYPE_ENUM.equals(valueType)) {
             try {
                 String enumType = json.getString(JSON_VALUE_ENUM_TYPE);
                 @SuppressWarnings({ "unchecked", "rawtypes" })

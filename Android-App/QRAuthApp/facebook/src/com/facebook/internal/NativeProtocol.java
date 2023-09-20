@@ -662,7 +662,7 @@ public final class NativeProtocol {
             description = errorData.getString(STATUS_ERROR_DESCRIPTION);
         }
 
-        if (type != null && type.equalsIgnoreCase(ERROR_USER_CANCELED)) {
+        if (type != null && ERROR_USER_CANCELED.equalsIgnoreCase(type)) {
             return new FacebookOperationCanceledException(description);
         }
 
