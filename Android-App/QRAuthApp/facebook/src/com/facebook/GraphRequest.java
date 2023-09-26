@@ -33,6 +33,8 @@ import android.util.Log;
 import android.util.Pair;
 
 import com.facebook.internal.*;
+import io.github.pixee.security.HostValidator;
+import io.github.pixee.security.Urls;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -923,11 +925,11 @@ public class GraphRequest {
                 GraphRequest request = requests.get(0);
                 // In the non-batch case, the URL we use really is the same one returned by
                 // getUrlForSingleRequest.
-                url = new URL(request.getUrlForSingleRequest());
+                url = Urls.create(request.getUrlForSingleRequest(), Urls.HTTP_PROTOCOLS, HostValidator.DENY_COMMON_INFRASTRUCTURE_TARGETS);
             } else {
                 // Batch case -- URL is just the graph API base, individual request URLs are
                 // serialized as relative_url parameters within each batch entry.
-                url = new URL(ServerProtocol.getGraphUrlBase());
+                url = Urls.create(ServerProtocol.getGraphUrlBase(), Urls.HTTP_PROTOCOLS, HostValidator.DENY_COMMON_INFRASTRUCTURE_TARGETS);
             }
         } catch (MalformedURLException e) {
             throw new FacebookException("could not construct URL for request", e);

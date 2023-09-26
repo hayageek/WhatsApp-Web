@@ -28,6 +28,8 @@ import android.os.Handler;
 import android.os.Looper;
 import com.facebook.FacebookException;
 import com.facebook.R;
+import io.github.pixee.security.HostValidator;
+import io.github.pixee.security.Urls;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -231,7 +233,7 @@ public class ImageDownloader {
         boolean issueResponse = true;
 
         try {
-            URL url = new URL(key.uri.toString());
+            URL url = Urls.create(key.uri.toString(), Urls.HTTP_PROTOCOLS, HostValidator.DENY_COMMON_INFRASTRUCTURE_TARGETS);
             connection = (HttpURLConnection) url.openConnection();
             connection.setInstanceFollowRedirects(false);
 
