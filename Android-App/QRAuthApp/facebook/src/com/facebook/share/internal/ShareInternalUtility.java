@@ -420,9 +420,9 @@ public final class ShareInternalUtility {
                 String fieldName = fieldNameAndNamespace.second;
 
                 if (requireNamespace) {
-                    if (namespace != null && namespace.equals("fbsdk")) {
+                    if (namespace != null && "fbsdk".equals(namespace)) {
                         newJsonObject.put(key, value);
-                    } else if (namespace == null || namespace.equals("og")) {
+                    } else if (namespace == null || "og".equals(namespace)) {
                         newJsonObject.put(fieldName, value);
                     } else {
                         data.put(fieldName, value);

@@ -292,7 +292,7 @@ public class AppLinkData {
 
             JSONObject bridgeArgs = appLinkArgsJson.getJSONObject(APPLINK_BRIDGE_ARGS_KEY);
             String method = bridgeArgs.getString(BRIDGE_ARGS_METHOD_KEY);
-            if (method.equals("applink") && version.equals("2")) {
+            if ("applink".equals(method) && "2".equals(version)) {
                 // We have a new deep link
                 AppLinkData appLinkData = new AppLinkData();
 

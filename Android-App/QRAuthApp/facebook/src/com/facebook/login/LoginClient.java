@@ -684,16 +684,16 @@ class LoginClient implements Parcelable {
         for (int i = 0; i < data.length(); ++i) {
             JSONObject object = data.optJSONObject(i);
             String permission = object.optString("permission");
-            if (permission == null || permission.equals("installed")) {
+            if (permission == null || "installed".equals(permission)) {
                 continue;
             }
             String status = object.optString("status");
             if (status == null) {
                 continue;
             }
-            if(status.equals("granted")) {
+            if("granted".equals(status)) {
                 grantedPermissions.add(permission);
-            } else if (status.equals("declined")) {
+            } else if ("declined".equals(status)) {
                 declinedPermissions.add(permission);
             }
         }

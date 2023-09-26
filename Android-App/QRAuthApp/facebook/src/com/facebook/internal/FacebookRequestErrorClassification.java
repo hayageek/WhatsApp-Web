@@ -212,13 +212,13 @@ public final class FacebookRequestErrorClassification {
             if (name == null) {
                 continue;
             }
-            if (name.equalsIgnoreCase(KEY_OTHER)) {
+            if (KEY_OTHER.equalsIgnoreCase(name)) {
                 otherRecoveryMessage = definition.optString(KEY_RECOVERY_MESSAGE, null);
                 otherErrors = parseJSONDefinition(definition);
-            } else if (name.equalsIgnoreCase(KEY_TRANSIENT)) {
+            } else if (KEY_TRANSIENT.equalsIgnoreCase(name)) {
                 transientRecoveryMessage = definition.optString(KEY_RECOVERY_MESSAGE, null);
                 transientErrors = parseJSONDefinition(definition);
-            } else if (name.equalsIgnoreCase(KEY_LOGIN_RECOVERABLE)) {
+            } else if (KEY_LOGIN_RECOVERABLE.equalsIgnoreCase(name)) {
                 loginRecoverableRecoveryMessage = definition.optString(KEY_RECOVERY_MESSAGE, null);
                 loginRecoverableErrors = parseJSONDefinition(definition);
             }

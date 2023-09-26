@@ -451,8 +451,8 @@ public class WebDialog extends Dialog {
                 if (Utility.isNullOrEmpty(error) && Utility
                         .isNullOrEmpty(errorMessage) && errorCode == FacebookRequestError.INVALID_ERROR_CODE) {
                     sendSuccessToListener(values);
-                } else if (error != null && (error.equals("access_denied") ||
-                        error.equals("OAuthAccessDeniedException"))) {
+                } else if (error != null && ("access_denied".equals(error) ||
+                        "OAuthAccessDeniedException".equals(error))) {
                     cancel();
                 } else if (errorCode == API_EC_DIALOG_CANCEL) {
                     cancel();
